@@ -111,7 +111,7 @@ abstract class Http
 		}
 		// 创建CURL对象。
 		$curl = new Curl();
-		$curl->setUserAgent(sprintf('Curl %s (+%s)', class_basename(get_class($this)), config('app.url')));
+//		$curl->setUserAgent(sprintf('Curl %s (+%s)', class_basename(get_class($this)), config('app.url')));
 		$curl->setHeader('Accept', 'application/json');
 		$curl->setOpt(CURLOPT_TIMEOUT, $this->timeout);
 
